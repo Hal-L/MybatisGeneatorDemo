@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
     
     <artifactId>baseMybatisGeneatorSwagger</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../swagger</module>
+    </modules>
     
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
