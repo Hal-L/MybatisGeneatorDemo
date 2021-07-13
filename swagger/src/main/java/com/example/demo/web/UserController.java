@@ -5,10 +5,7 @@ import com.example.demo.model.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.Clock;
 import java.time.LocalDateTime;
@@ -38,7 +35,7 @@ public class UserController {
 
     @ApiOperation(value = "新增用户", notes = "注册")
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public void save(User user) {
+    public void save(@RequestBody User user) {
         if (user.getCreateTime() == null)
             user.setCreateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         if (user.getUpdateTime() == null)
@@ -48,7 +45,7 @@ public class UserController {
 
     @ApiOperation(value = "更新用户信息", notes = "更改用户信息")
     @RequestMapping(value = "update", method = RequestMethod.PUT)
-    public void update(User user) {
+    public void update(@RequestBody User user) {
         userMapper.updateByPrimaryKey(user);
     }
 
