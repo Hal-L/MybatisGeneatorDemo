@@ -15,3 +15,5 @@ http://localhost:8080/doc.html#/home
 TODO mybatis-plus SQL语句打印
 
 TODO logback.xml 输出日志
+
+TODO 开启热部署
