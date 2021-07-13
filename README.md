@@ -11,3 +11,7 @@ sql文件夹中的有创建数据库和表的sql脚本
 
 ## knife4j访问路径
 http://localhost:8080/doc.html#/home
+
+TODO mybatis-plus SQL语句打印
+
+TODO logback.xml 输出日志
