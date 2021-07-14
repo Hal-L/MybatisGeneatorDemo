@@ -1,0 +1,23 @@
+# datasource
+# 使用是什么数据库连接池 ?????
+# 使用是Springboot默认的连接池  Hikari
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3300/mp
+    username: root
+    password: arch@mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      # 表名前缀
+      table-prefix: tb_
+      # id生成策略 数据库自增
+      id-type: auto
+  configuration:
+    # 日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+

@@ -8,6 +8,7 @@ import com.demo.aic.entity.vo.TeacherQueryVO;
 import com.demo.aic.mapper.EduTeacherMapper;
 import com.demo.aic.pojo.dto.ResultDTO;
 import com.demo.aic.service.IEduTeacherService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
