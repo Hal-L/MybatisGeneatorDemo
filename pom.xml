@@ -8,6 +8,7 @@
     <modules>
         <module>mybatisGenetor</module>
         <module>baseMybatisGeneatorSwagger</module>
+        <module>base</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -29,11 +30,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -42,11 +39,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.5.6</version>
-        </dependency>
+        </dependency>-->
         <!--mybatis plus 起步依赖-->
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -89,6 +86,18 @@
             <artifactId>freemarker</artifactId>
             <version>2.3.31</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -99,3 +108,14 @@
         </plugins>
     </build>
 </project>
+
+<!--
+
+
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-test</artifactId>
+<scope>test</scope>
+</dependency>
+
+-->
