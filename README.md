@@ -11,3 +11,5 @@ sql文件夹中的有创建数据库和表的sql脚本
 
 ## knife4j访问路径
 http://localhost:8080/doc.html#/home
+
+测试取消push:git reset --soft
