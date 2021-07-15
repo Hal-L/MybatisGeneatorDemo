@@ -12,4 +12,6 @@ sql文件夹中的有创建数据库和表的sql脚本
 ## knife4j访问路径
 http://localhost:8080/doc.html#/home
 
-测试取消push:git reset --soft
+测试取消push:
+1.本地回推到当前版本号:git reset --soft 版本号
+2.执行 git push origin 分支名 –-force ，强制提交当前版本号。
