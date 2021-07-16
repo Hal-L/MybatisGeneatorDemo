@@ -10,8 +10,8 @@ spring:
 
 
 mybatis-plus:
-#  global-config:
-#    db-config:
+#  global-com.example.config:
+#    db-com.example.config:
 #      # 表名前缀
 #      table-prefix: tb_
 #      # id生成策略 数据库自增

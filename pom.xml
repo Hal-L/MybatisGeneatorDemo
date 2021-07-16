@@ -6,9 +6,10 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>mybatisGenetor</module>
-        <module>baseMybatisGeneatorSwagger</module>
         <module>base</module>
+        <module>mybatisGenerator</module>
+        <module>swagger</module>
+        <module>mybatis-plusSwagger2Markup</module>
         <module>mybatis_plus_springBoot</module>
     </modules>
     <parent>
@@ -107,6 +108,13 @@
         <!--                </exclusion>-->
         <!--            </exclusions>-->
         <!--        </dependency>-->
+
+        <!-- 分⻚插件-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.13</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

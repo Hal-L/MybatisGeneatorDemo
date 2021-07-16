@@ -69,8 +69,8 @@ public class Constant {
     static public final String WORKER_ROLE = "WORKER";
     public static final String SLAVE_ROLE = "SLAVE";
     public static final String MACHINE_HEARTBEAT_INTERVAL_IN_SEC = "shrek.machine.heartbeat.interval";
-    public static final String MAX_SERVICE_THREAD_SIZE = "shrek.max.service.thread.size";
-    public static final String MIN_SERVICE_THREAD_SIZE = "shrek.min.service.thread.size";
+    public static final String MAX_SERVICE_THREAD_SIZE = "shrek.max.com.example.service.thread.size";
+    public static final String MIN_SERVICE_THREAD_SIZE = "shrek.min.com.example.service.thread.size";
     public static final long DEFAULT_MACHINE_HEARTBEAT_INTERVAL_IN_SEC = 60L;
     public static final String LOG_PREFIX_FATAL = "[FATAL]";
     public static final String WORKER_CAPACITY = "worker.capacity";

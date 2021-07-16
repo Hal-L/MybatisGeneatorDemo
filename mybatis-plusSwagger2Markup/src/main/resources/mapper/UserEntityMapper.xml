@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE com.example.mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-com.example.mapper.dtd">
+<com.example.mapper namespace="com.fendo.mybatis.plus.com.example.mapper.UserEntityMapper">
+
+    <delete id="deleteAll">
+        DELETE FROM USER
+    </delete>
+    <select id="getPage" resultType="java.util.Map">
+      select * from USER
+    </select>
+
+</com.example.mapper>
