@@ -6,7 +6,6 @@
         <artifactId>MybatisGeneatorSwagger</artifactId>
         <groupId>com.example</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../base/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,6 +14,7 @@
     <modules>
         <module>java_A</module>
         <module>xml_A</module>
+        <module>xml_B</module>
     </modules>
 
     <properties>
