@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 // TODO: 2021/7/16   https://blog.csdn.net/qq_38496561/article/details/103066412
 public class CodeGenerator {
 
@@ -41,11 +42,11 @@ public class CodeGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         // 获取项目的绝对路径
-        String projectPath = System.getProperty("user.dir");
-        // 指定文件生成路径
+        String projectPath = System.getProperty("user.dir") + "/mybatisGenerator/java_A";
+        // 指定java文件生成路径
         gc.setOutputDir(projectPath + "/src/main/java");
         // 作者
-        gc.setAuthor("作者");
+        gc.setAuthor("ero");
         // TODO: 2021/7/16 未知
         gc.setOpen(false);
         //实体属性 Swagger2 注解
@@ -54,11 +55,11 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://47.104.197.98:3306/shrek_guid?useUnicode=true&useSSL=false&characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://localhost:3302/crm?useUnicode=true&useSSL=false&characterEncoding=utf8&allowPublicKeyRetrieval=true");
         dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("Ali@2020");
+        dsc.setPassword("arch@mysql");
         mpg.setDataSource(dsc);
 
         // 包配置
@@ -67,7 +68,7 @@ public class CodeGenerator {
         // pc.setModuleName("shrek");
 
         // 父级包名
-        pc.setParent("com/aliyun/shrek");
+        pc.setParent("com.aliyun.shrek");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -144,7 +145,7 @@ public class CodeGenerator {
         strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
         strategy.setControllerMappingHyphenStyle(true);
         //生成的类名去掉前缀 如yw_sys_user ---> SysUser
-        strategy.setTablePrefix(pc.getModuleName() + "_");
+        strategy.setTablePrefix(pc.getModuleName() + "t_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
