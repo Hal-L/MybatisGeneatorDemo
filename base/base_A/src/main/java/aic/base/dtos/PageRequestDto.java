@@ -1,4 +1,4 @@
-package com.example.demo.dtos;
+package aic.base.dtos;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

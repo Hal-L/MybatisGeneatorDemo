@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
-        PUBLIC "-//mybatis.org//DTD MyBatis com.example.Generator Configuration 1.0//EN"
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <properties resource="application.properties"/>
@@ -39,8 +39,8 @@
         <javaTypeResolver>
             <property name="useJSR310Types" value="true"/>
         </javaTypeResolver>
-        <javaModelGenerator targetPackage="com.example.model" targetProject="src/main/java"/>
-        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.example.demo.com.example.mapper" targetProject="src/main/java" />
+        <javaModelGenerator targetPackage="com.example.demo.model" targetProject="mybatisGenerator/xml_A/src/main/java"/>
+        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.example.demo.mapper" targetProject="mybatisGenerator/xml_A/src/main/java" />
         <!-- 生成所有表 -->
         <table tableName="%" >
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>

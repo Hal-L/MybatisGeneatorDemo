@@ -15,6 +15,7 @@
         <module>java_A</module>
         <module>xml_A</module>
         <module>xml_B</module>
+        <module>xml_C</module>
     </modules>
 
     <properties>
