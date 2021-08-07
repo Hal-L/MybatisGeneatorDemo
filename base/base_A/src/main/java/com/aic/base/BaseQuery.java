@@ -1,4 +1,4 @@
-package aic.base;
+package com.aic.base;
 
 import lombok.Data;
 

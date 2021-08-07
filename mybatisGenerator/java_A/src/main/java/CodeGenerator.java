@@ -64,7 +64,7 @@ public class CodeGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        // pc.setModuleName(scanner("包名称"));
+        pc.setModuleName(scanner("包名称"));
         // pc.setModuleName("shrek");
 
         // 父级包名

@@ -1,4 +1,4 @@
-package aic.base;
+package com.aic.base;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -39,17 +39,6 @@ public interface MyBaseMapper<T, ID> extends BaseMapper<T> {
      */
     public Integer insertBatch(List<T> entities) throws DataAccessException;
 
-
-    /**
-     * 根据id 查询详情
-     *
-     * @param id
-     * @return
-     * @throws DataAccessException
-     */
-    public T selectByPrimaryKey(ID id) throws DataAccessException;
-
-
     /**
      * 多条件查询
      *
@@ -59,17 +48,6 @@ public interface MyBaseMapper<T, ID> extends BaseMapper<T> {
      */
     public List<T> selectByParams(BaseQuery baseQuery) throws DataAccessException;
 
-
-    /**
-     * 更新单条记录
-     *
-     * @param entity
-     * @return
-     * @throws DataAccessException
-     */
-    public Integer updateByPrimaryKeySelective(T entity) throws DataAccessException;
-
-
     /**
      * 批量更新
      *
@@ -78,15 +56,6 @@ public interface MyBaseMapper<T, ID> extends BaseMapper<T> {
      * @throws DataAccessException
      */
     public Integer updateBatch(List<T> entities) throws DataAccessException;
-
-    /**
-     * 删除单条记录
-     *
-     * @param id
-     * @return
-     * @throws DataAccessException
-     */
-    public Integer deleteByPrimaryKey(ID id) throws DataAccessException;
 
     /**
      * 批量删除

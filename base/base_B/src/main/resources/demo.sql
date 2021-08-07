@@ -15,4 +15,4 @@ CREATE TABLE `edu_teacher` (
                                UNIQUE KEY `uk_name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='讲师';
 
-INSERT INTO edu.edu_teacher (id, name, intro, career, level, avatar, sort, is_deleted, gmt_create, gmt_modified) VALUES ('1', 'aic', 'test', 'test', 0, '高级教师', 0, 0, '2020-10-17 12:17:24', '2020-10-17 12:17:24');
+INSERT INTO edu.edu_teacher (id, name, intro, career, level, avatar, sort, is_deleted, gmt_create, gmt_modified) VALUES ('1', 'com.aic', 'test', 'test', 0, '高级教师', 0, 0, '2020-10-17 12:17:24', '2020-10-17 12:17:24');

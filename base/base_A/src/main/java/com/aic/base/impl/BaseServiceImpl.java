@@ -1,9 +1,9 @@
-package aic.base.impl;
+package com.aic.base.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import aic.base.BaseQuery;
-import aic.base.BaseService;
-import aic.base.MyBaseMapper;
+import com.aic.base.BaseQuery;
+import com.aic.base.BaseService;
+import com.aic.base.MyBaseMapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,17 +56,6 @@ public abstract class BaseServiceImpl<T, ID> extends ServiceImpl<MyBaseMapper<T,
 
 
     /**
-     * 根据id 查询详情
-     *
-     * @param id
-     * @return
-     */
-    // public T selectByPrimaryKey(ID id) throws DataAccessException {
-    //     return baseMapper.selectByPrimaryKey(id);
-    // }
-
-
-    /**
      * 多条件查询
      *
      * @param baseQuery
@@ -76,18 +65,6 @@ public abstract class BaseServiceImpl<T, ID> extends ServiceImpl<MyBaseMapper<T,
         return baseMapper.selectByParams(baseQuery);
     }
 
-
-    /**
-     * 更新单条记录
-     *
-     * @param entity
-     * @return
-     */
-    public Integer updateByPrimaryKeySelective(T entity) throws DataAccessException {
-        return baseMapper.updateByPrimaryKeySelective(entity);
-    }
-
-
     /**
      * 批量更新
      *
@@ -96,16 +73,6 @@ public abstract class BaseServiceImpl<T, ID> extends ServiceImpl<MyBaseMapper<T,
      */
     public Integer updateBatch(List<T> entities) throws DataAccessException {
         return baseMapper.updateBatch(entities);
-    }
-
-    /**
-     * 删除单条记录
-     *
-     * @param id
-     * @return
-     */
-    public Integer deleteByPrimaryKey(ID id) throws DataAccessException {
-        return baseMapper.deleteByPrimaryKey(id);
     }
 
     /**

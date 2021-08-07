@@ -1,4 +1,4 @@
-package aic.base;
+package com.aic.base;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.dao.DataAccessException;
@@ -6,7 +6,7 @@ import org.springframework.dao.DataAccessException;
 import java.util.List;
 import java.util.Map;
 
-public interface BaseService<T, ID>  extends IService<T> {
+public interface BaseService<T, ID> extends IService<T> {
 
     /**
      * 添加记录返回行数
@@ -14,7 +14,7 @@ public interface BaseService<T, ID>  extends IService<T> {
      * @param entity
      * @return
      */
-    public Integer insertSelective(T entity) throws DataAccessException ;
+    public Integer insertSelective(T entity) throws DataAccessException;
 
     /**
      * 添加记录返回主键
@@ -30,19 +30,7 @@ public interface BaseService<T, ID>  extends IService<T> {
      * @param entities
      * @return
      */
-    public Integer insertBatch(List<T> entities) throws DataAccessException ;
-
-
-    /**
-     * 根据id 查询详情
-     *
-     * @param id
-     * @return
-     */
-    // public T selectByPrimaryKey(ID id) throws DataAccessException {
-    //     return baseMapper.selectByPrimaryKey(id);
-    // }
-
+    public Integer insertBatch(List<T> entities) throws DataAccessException;
 
     /**
      * 多条件查询
@@ -68,7 +56,7 @@ public interface BaseService<T, ID>  extends IService<T> {
      * @param entities
      * @return
      */
-    public Integer updateBatch(List<T> entities) throws DataAccessException ;
+    public Integer updateBatch(List<T> entities) throws DataAccessException;
 
     /**
      * 删除单条记录
@@ -84,7 +72,7 @@ public interface BaseService<T, ID>  extends IService<T> {
      * @param ids
      * @return
      */
-    public Integer deleteBatch(ID[] ids) throws DataAccessException ;
+    public Integer deleteBatch(ID[] ids) throws DataAccessException;
 
     /**
      * 为layui封装数据
