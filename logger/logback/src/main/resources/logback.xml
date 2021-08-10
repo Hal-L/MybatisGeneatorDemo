@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false">
+    <!--以下三行一定注释掉，否则还会打印部分debug日志，o.apache.commons.httpclient.HttpClient-->
+    <!--<logger name="org.apache" level="DEBUG" />-->
+    <!--<logger name="org.apache.http.wire" level="DEBUG" />-->
+    <!--<logger name="org.apache.http.headers" level="INFO" />-->
+
+    <!--    <property name="CONSOLE_LOG_PATTERN" value="%date{yyyy-MM-dd HH:mm:ss}  %highlight(%-5level) %magenta(%-4relative) -&#45;&#45; [%yellow(%15.15thread)] %cyan(%-40.40logger{39}) : %msg%n"/>-->
+
+
     <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
     <property name="LOG_HOME" value="/Users/project/MybatisGeneratorSwagger/logger/logback/target/logs"/>
     <property name="LOG_FILE" value="${LOG_HOME}/_}"/>
